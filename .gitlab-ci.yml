@@ -1,0 +1,35 @@
+variables:
+  DEPLOY_PATH: 'D:\var\www\1100_TMMIN\1103_envcs_fe_vue3ts'
+
+stages:
+  - build
+  - deploy
+
+build site:
+  image: node:16.20.2-alpine
+  stage: build
+  script:
+    - npm install --progress=false
+    - npm run build
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - dist
+  tags:
+    - ip4.25
+    - lab
+    - shared
+    - ubuntu2004
+
+deploy:
+  stage: deploy
+  dependencies:
+    - build site
+  script:
+    - 'xcopy /y /s /e /i ".\dist" "$env:DEPLOY_PATH" /h'
+    - 'xcopy /y /s ".\web.config" "$env:DEPLOY_PATH" /h'
+  environment: production
+  tags:
+    - ip4.4
+    - shared
+    - winserv-19
