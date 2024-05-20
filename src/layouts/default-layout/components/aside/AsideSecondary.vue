@@ -16,23 +16,12 @@
             >
             <div class="tab-content">
 
-                <!-- NVCS::START -->
                 <div class="card-body border-0 ms-4">
-                <h3 class="card-title fw-bold text-gray-900">E - NVCS</h3>
-                <span class="text-muted mt-1 fw-semibold fs-7">New Vehicle Check Sheet - TMMIN</span>
+                <h3 class="card-title fw-bold text-gray-900">Car Rent</h3>
+                <span class="text-muted mt-1 fw-semibold fs-7">A Website For Car Rentals</span>
                 </div>
     
                 <div class="card-body pt-2">
-                    <!-- title tab -->
-                    <!-- <div class="menu-item">
-                        <div class="menu-content pt-8 pb-2">
-                            <span class="menu-section text-muted text-uppercase fs-8 ls-1">
-                                Master 
-                            </span>
-                        </div>
-                    </div> -->
-                    <!-- end title tab -->
-
                     <div class="menu-item pt-8">
                         <router-link 
                             active-class="active"
@@ -74,7 +63,7 @@
                                 <div class="menu-item">
                                     <router-link 
                                         active-class="active"
-                                        to="/master/pos"
+                                        to="/master/cars"
                                         class="menu-link py-3"
                                     >
                                         <span class="menu-icon">
@@ -84,91 +73,10 @@
                                             class="bullet bullet-dot h-6px w-6px"
                                             ></span>
                                         </span>
-                                        <span class="menu-title">Master Pos</span>
+                                        <span class="menu-title">Master Cars</span>
                                     </router-link>
                                 </div>
                                 <!--end::Menu item-->
-
-                                <!--begin::Menu item-->
-                                <div class="menu-item">
-                                    <!-- change span with router-link -->
-                                    <router-link 
-                                        active-class="active"
-                                        to="/master/inspection-job"
-                                        class="menu-link py-3"
-                                    >
-                                    <span class="menu-icon">
-                                        <i class="bi fs-3"></i>
-                                        <span
-                                            class="bullet bullet-dot h-6px w-6px"
-                                        ></span>
-                                    </span>
-                                    <span class="menu-title">Master Inspection Job</span>
-                                    </router-link>
-                                </div>
-                                <!--end::Menu item-->
-
-                                <!--begin::Menu item-->
-                                <div class="menu-item">
-                                    <!-- change span with router-link -->
-                                    <router-link 
-                                        active-class="active"
-                                        to="/master/inspector"
-                                        class="menu-link py-3"
-                                    >
-                                    <span class="menu-icon">
-                                        <i class="bi fs-3"></i>
-                                        <!-- <KTIcon
-                                            icon-name="eye"
-                                            icon-class="fs-4"
-                                        /> -->
-                                        <span
-                                            class="bullet bullet-dot h-6px w-6px"
-                                        ></span>
-                                        </span>
-                                        <span class="menu-title">Master Inspector</span>
-                                    </router-link>
-                                </div>
-                                <!--end::Menu item-->
-
-                                <!--begin::Menu item-->
-                                <div class="menu-item">
-                                    <!-- change span with router-link -->
-                                    <router-link 
-                                        active-class="active"
-                                        to="/master/defect"
-                                        class="menu-link py-3"
-                                    >
-                                    <span class="menu-icon">
-                                        <i class="bi fs-3"></i>
-                                        <span
-                                            class="bullet bullet-dot h-6px w-6px"
-                                        ></span>
-                                    </span>
-                                    <span class="menu-title">Master Defect</span>
-                                    </router-link>
-                                </div>
-                                <!--end::Menu item-->
-
-                                <!--begin::Menu item-->
-                                <div class="menu-item">
-                                    <!-- change span with router-link -->
-                                    <router-link 
-                                        active-class="active"
-                                        to="/master/spesification"
-                                        class="menu-link py-3"
-                                    >
-                                    <span class="menu-icon">
-                                        <i class="bi fs-3"></i>
-                                        <span
-                                            class="bullet bullet-dot h-6px w-6px"
-                                        ></span>
-                                    </span>
-                                    <span class="menu-title">Master Spesification</span>
-                                    </router-link>
-                                </div>
-                                <!--end::Menu item-->
-
                             </div>
                             <!--end::Menu sub-->
                         </div>

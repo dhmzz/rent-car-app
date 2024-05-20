@@ -11,7 +11,7 @@ import { destroyExpDt, destroyToken } from "@/core/services/JwtService";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/sign-in",
+    redirect: "/master/cars",
     component: () => import("@/layouts/default-layout/DefaultLayout.vue"),
     meta: {
       middleware: "auth",
@@ -28,7 +28,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       
       {
-        path: "/master/mobil",
+        path: "/master/cars",
         name: "master-cars",
         component: () => import("@/views/master/master-car/MasterCars.vue"),
         meta: {
